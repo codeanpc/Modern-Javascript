@@ -67,6 +67,8 @@ body {
 }
 
 .calc-display > span {
+  padding: 10px;
+  font-weight: 800;
 }
 
 #blink {
