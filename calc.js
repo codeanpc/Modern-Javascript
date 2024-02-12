@@ -44,4 +44,13 @@ function getInput(e) {
 
 const getResult = (input) => {
   console.log(`All user input ${input}`);
+  if (input.includes("+")) {
+    console.log("Contains +");
+    let newExp = input.split("+");
+    console.log(newExp);
+    for (let i = 1; i < newExp.length; i++) {
+      let totalSum = Number(newExp[0]);
+      console.log("This is my totalSum " + totalSum);
+    }
+  }
 };
