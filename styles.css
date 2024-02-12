@@ -67,8 +67,6 @@ body {
 }
 
 .calc-display > span {
-  padding: 10px;
-  font-weight: 800;
 }
 
 #blink {
@@ -98,6 +96,6 @@ body {
   font-family: Montserrat;
 }
 
-#equaltoBtn {
+#equal {
   background-color: #2b4478;
 }

@@ -19,18 +19,30 @@ let userInputSpan = document.getElementById("userInputSpan");
 //   console.log(Button0);
 // });
 
+//  if (digitPattern.test(userInput)) {
+let expression = "";
+const validMathInput = ["+", "-", "x", "/"];
 
 function getInput(e) {
-  const digitPattern = /^[0-9]$/;
   let userInput = e.target.innerText;
-  if (digitPattern.test(userInput)) {
-    console.log(typeof userInput);
-    userInput = Number(userInput);
-    console.log("Number Detected: " + userInput);
-    userInputSpan.innerHTML += userInput;
-  } else if (e.target.innerText == "AC") {
+  console.log(userInput);
+
+  if (userInput == "AC") {
+    expression = "";
     userInputSpan.innerHTML = "";
+  } else if (userInput == "*") {
+    console.log(`Before ${expression}`);
+    expression = expression.slice(0, -1);
+    userInputSpan.innerHTML = expression;
+    console.log(`After ${expression}`);
+  } else if (userInput == "=" && validMathInput.includes(expression)) {
+    getResult(expression);
+  } else {
+    expression += userInput;
+    userInputSpan.innerHTML = expression;
   }
 }
 
-button.addEventListener()
+const getResult = (input) => {
+  console.log(`All user input ${input}`);
+};
