@@ -10,7 +10,7 @@ body {
 
 .container {
   background-color: rgb(24, 24, 24);
-  width: 30%;
+  width: 100%;
   height: calc(100vh - 20px);
   margin: 10px auto;
 }
@@ -51,11 +51,11 @@ body {
 }
 
 #ac {
-  background-color: rgba(243, 104, 238, 0.296);
+  background-color: #593c5b;
 }
 
 .btn-grey {
-  background-color: #bfdffb2c !important;
+  background-color: #3e4659 !important;
 }
 
 .calc-display {
@@ -63,6 +63,7 @@ body {
   font-size: 80px;
   text-align: right;
   font-family: Montserrat;
+  background-color: #31333d;
 }
 
 .calc-display > span {
@@ -93,4 +94,8 @@ body {
   text-align: center;
   margin-top: auto;
   font-family: Montserrat;
+}
+
+#equaltoBtn {
+  background-color: #2b4478;
 }
