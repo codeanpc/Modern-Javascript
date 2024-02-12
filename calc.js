@@ -25,21 +25,13 @@ const validMathInput = ["+", "-", "x", "/"];
 
 function getInput(e) {
   let userInput = e.target.innerText;
-  console.log(userInput);
-
-  if (userInput == "AC") {
-    expression = "";
+  if (digitPattern.test(userInput)) {
+    console.log(typeof userInput);
+    userInput = Number(userInput);
+    console.log("Number Detected: " + userInput);
+    userInputSpan.innerHTML += userInput;
+  } else if (e.target.innerText == "AC") {
     userInputSpan.innerHTML = "";
-  } else if (userInput == "*") {
-    console.log(`Before ${expression}`);
-    expression = expression.slice(0, -1);
-    userInputSpan.innerHTML = expression;
-    console.log(`After ${expression}`);
-  } else if (userInput == "=" && validMathInput.includes(expression)) {
-    getResult(expression);
-  } else {
-    expression += userInput;
-    userInputSpan.innerHTML = expression;
   }
 }
 
