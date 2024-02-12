@@ -28,13 +28,13 @@ function getInput(e) {
   console.log(userInput);
 
   if (userInput == "AC") {
-    expression = expression.slice(0, -1);
+    expression = "";
     userInputSpan.innerHTML = "";
   } else if (userInput == "*") {
     console.log(expression);
-    expression = expression.slice(0, -2);
+    expression = expression.slice(0, -1);
     userInputSpan.innerHTML = expression;
-  } else if (userInput == "=" && validMathInput.includes(expression)) {
+  } else if (userInput == "=") {
     getResult(expression);
   } else {
     expression += userInput;
