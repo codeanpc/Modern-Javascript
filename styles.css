@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+}
+
+.container {
+  background-color: rgb(24, 24, 24);
+  width: 30%;
+  height: calc(100vh - 20px);
+  margin: 10px auto;
+}
+
+.calc-display {
+  background-color: rgba(37, 36, 36, 0.5);
+  height: 28%;
+  width: 100%;
+  border-radius: 0 0px 30px 30px;
+  overflow-wrap: break-word;
+}
+
+.calc-body {
+  padding: 10px;
+}
+
+.calc-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.calc-btn button {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: none;
+  margin: 5px 0px 5px 0px;
+  background-color: rgb(45, 45, 45);
+  color: #d5d5d5;
+  font-size: 30px;
+}
+
+.calc-btn button:hover {
+  border-radius: 20px;
+  cursor: pointer;
+  transform: 0.1s;
+}
+
+#ac {
+  background-color: rgba(243, 104, 238, 0.296);
+}
+
+.btn-grey {
+  background-color: #bfdffb2c !important;
+}
+
+.calc-display {
+  color: #ffffff;
+  font-size: 80px;
+  text-align: right;
+  font-family: Montserrat;
+}
+
+.calc-display > span {
+}
+
+#blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+#gradient {
+  background: linear-gradient(45deg, #b677db, #ff3399);
+  -webkit-background-clip: text; /* For Safari/Chrome/iOS */
+  background-clip: text;
+  color: transparent;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: auto;
+  font-family: Montserrat;
+}

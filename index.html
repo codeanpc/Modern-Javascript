@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Modern Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-display">
+        <span id="userInputSpan"></span><span id="blink">|</span>
+      </div>
+      <div class="calc-body">
+        <div class="calc-btn calc-row-1">
+          <button onclick="getInput(event)" id="ac">AC</button>
+          <button onclick="getInput(event)" class="btn-grey" id="paren">
+            ()
+          </button>
+          <button onclick="getInput(event)" class="btn-grey" id="percentage">
+            %
+          </button>
+          <button onclick="getInput(event)" class="btn-grey" id="divider">
+            /
+          </button>
+        </div>
+        <div class="calc-btn calc-row-2">
+          <button onclick="getInput(event)" id="7">7</button>
+          <button onclick="getInput(event)" id="8">8</button>
+          <button onclick="getInput(event)" id="9">9</button>
+          <button onclick="getInput(event)" class="btn-grey" id="X">X</button>
+        </div>
+        <div class="calc-btn calc-row-3">
+          <button onclick="getInput(event)" id="4">4</button>
+          <button onclick="getInput(event)" id="5">5</button>
+          <button onclick="getInput(event)" id="6">6</button>
+          <button onclick="getInput(event)" class="btn-grey" id="-">-</button>
+        </div>
+        <div class="calc-btn calc-row-4">
+          <button onclick="getInput(event)" id="1">1</button>
+          <button onclick="getInput(event)" id="2">2</button>
+          <button onclick="getInput(event)" id="3">3</button>
+          <button onclick="getInput(event)" class="btn-grey" id="+">+</button>
+        </div>
+        <div class="calc-btn calc-row-5">
+          <button onclick="getInput(event)" id="0">0</button>
+          <button onclick="getInput(event)" id=".">.</button>
+          <button onclick="getInput(event)" id="*">*</button>
+          <button onclick="getInput(event)" id="=">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
